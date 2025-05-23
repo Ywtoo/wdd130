@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Whitewater Rafting Adventures, our history, mission, and the adventures awaiting you.">
+    <meta name="author" content="Gabriel Nascimento">
+    <title>About Us - Whitewater Rafting Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="site-logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/hero-background.jpg" alt="People whitewater rafting on exciting rapids">
+            <h1>Whitewater Rafting Adventures</h1>
+            <article>
+                <h2>Our Mission</h2>
+                <img src="images/happy-client.webp" alt="Happy client after a rafting adventure">
+                <p>
+                    Our mission is to provide unforgettable, safe, and thrilling rafting adventures for everyone. We connect people with nature through the adrenaline of the rapids, always with respect for the environment and a focus on team fun. Come create lasting memories with us!
+                </p>
+            </article>
+        </div>
+
+        <section class="history-section">
+            <h2>History</h2>
+            <p>
+                Founded in [Founding Year], Whitewater Rafting Adventures began as a small dream to share the passion for rivers and nature. Over the years, we have grown to become a benchmark in adventure tourism, guiding thousands of adventurers through challenging rapids and stunning landscapes. Our commitment to safety and customer satisfaction has always been our priority.
+            </p>
+        </section>
+
+        <section class="adventure-gallery">
+            <h2>Adventure Awaits You!</h2>
+            <div class="gallery-grid-wrapper">
+                <img src="images/adventure-image1.jpg" alt="Rafting group tackling a large wave" class="gallery-img-main">
+                <img src="images/adventure-image2.jpg" alt="Rafters paddling in calmer waters enjoying the scenery" class="gallery-img-side">
+                <img src="images/adventure-image3.jpg" alt="Aerial view of a rafting boat in a canyon" class="gallery-img-side">
+                <img src="images/adventure-image4.jpg" alt="People smiling and celebrating in the rafting boat" class="gallery-img-side">
+                <img src="images/adventure-image5.jpg" alt="Rafting guide instructing the group before the descent" class="gallery-img-side">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Whitewater Rafting Adventures - Gabriel Nascimento</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

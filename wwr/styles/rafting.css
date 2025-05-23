@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #193F58;
+    --secondary-color: #B0C9E1;
+    --accent1-color: #A4876A; 
+    --accent2-color: #876D52;
+    --light-background-color: #ECF3F8;
+    --text-on-dark: #FFFFFF;
+    --text-on-light: #333333; 
+    --white-color: #fff;
+
+    --heading-font: 'Bebas Neue', cursive;
+    --body-font: 'Open Sans', sans-serif; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color); 
+  background-color: var(--light-background-color); 
+}
+
+header, main, footer {
+  width: 840px; 
+  margin: 0 auto; 
+}
+
+header {
+    background-color: var(--primary-color); 
+    color: var(--accent2-color); 
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+header img {
+  height: 120px; 
+  width: auto;  
+}
+
+nav, p, section, article { 
+  margin: 16px;
+  padding: 8px;
+}
+
+header nav a { 
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    font-size: 1.2em;
+    margin-left: 15px;
+}
+header nav a:hover {
+    color: var(--text-on-dark);
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+h2 { 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.hero {
+    position: relative;
+    margin: 0;
+    padding: 0; 
+}
+
+.hero img { 
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.hero h1 {
+    position: absolute; 
+    top: 20px; 
+    left: 0;
+    width: 100%;
+    padding: 16px; 
+    text-align: center; 
+    background-color: var(--accent1-color); 
+    color: var(--white-color); 
+    opacity: 0.95; 
+    font-size: 3em; 
+    margin: 0; 
+}
+
+.hero article {
+    position: absolute; 
+    bottom: 20px; 
+    left: 5%; 
+    width: 90%; 
+    background-color: rgba(255, 255, 255, 0.85); 
+    color: var(--text-on-light);
+    padding: 15px; 
+    border-radius: 5px;
+    margin:0;
+}
+
+.hero article img {
+    float: right; 
+    width: 125px;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    border: 2px solid var(--accent2-color);
+    border-radius: 4px;
+    padding: 0;
+}
+
+.hero article p {
+    margin: 0; 
+    padding: 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.history-section {
+    background-color: var(--white-color);
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+.history-section p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.adventure-gallery {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 20px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.adventure-gallery h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+}
+
+.gallery-grid-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto; 
+    gap: 30px;
+    align-items: start;
+    max-width: 70%; 
+    margin: 0 auto; 
+}
+
+.adventure-gallery img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+}
+
+.gallery-grid-wrapper img:first-of-type {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; 
+}
+
+.gallery-grid-wrapper img:nth-of-type(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2; 
+}
+
+.gallery-grid-wrapper img:nth-of-type(3) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2; 
+}
+
+.gallery-grid-wrapper img:nth-of-type(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; 
+}
+
+.gallery-grid-wrapper img:nth-of-type(5) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3; 
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.socialmedia img {
+    width: 30px; 
+    height: 30px;
+    vertical-align: middle; 
+}
