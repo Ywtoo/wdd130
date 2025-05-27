@@ -14,11 +14,14 @@
 <body>
     <header>
         <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" class="site-logo">
+        <h1 class="visually-hidden">Whitewater Rafting Adventures</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -35,20 +38,39 @@
         </div>
 
         <section class="history-section">
-            <h2>History</h2>
-            <p>
-                Founded in [Founding Year], Whitewater Rafting Adventures began as a small dream to share the passion for rivers and nature. Over the years, we have grown to become a benchmark in adventure tourism, guiding thousands of adventurers through challenging rapids and stunning landscapes. Our commitment to safety and customer satisfaction has always been our priority.
-            </p>
+            <div class="history-flex">
+                <div class="history-text">
+                    <h2>History</h2>
+                    <p>
+                        Founded in [Founding Year], Whitewater Rafting Adventures began as a small dream to share the passion for rivers and nature. Over the years, we have grown to become a benchmark in adventure tourism, guiding thousands of adventurers through challenging rapids and stunning landscapes. Our commitment to safety and customer satisfaction has always been our priority.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="adventure-gallery">
             <h2>Adventure Awaits You!</h2>
-            <div class="gallery-grid-wrapper">
-                <img src="images/adventure-image1.jpg" alt="Rafting group tackling a large wave" class="gallery-img-main">
-                <img src="images/adventure-image2.jpg" alt="Rafters paddling in calmer waters enjoying the scenery" class="gallery-img-side">
-                <img src="images/adventure-image3.jpg" alt="Aerial view of a rafting boat in a canyon" class="gallery-img-side">
-                <img src="images/adventure-image4.jpg" alt="People smiling and celebrating in the rafting boat" class="gallery-img-side">
-                <img src="images/adventure-image5.jpg" alt="Rafting guide instructing the group before the descent" class="gallery-img-side">
+            <div class="gallery-flex">
+                <figure>
+                    <img src="images/adventure-image1.jpg" alt="Rafting group tackling a large wave" class="gallery-img-main">
+                    <figcaption>Big Rapids Challenge</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure-image2.jpg" alt="Rafters paddling in calmer waters enjoying the scenery" class="gallery-img-side">
+                    <figcaption>Scenic Paddle</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure-image3.jpg" alt="Aerial view of a rafting boat in a canyon" class="gallery-img-side">
+                    <figcaption>Canyon Explorer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure-image4.jpg" alt="People smiling and celebrating in the rafting boat" class="gallery-img-side">
+                    <figcaption>Team Celebration</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure-image5.jpg" alt="Rafting guide instructing the group before the descent" class="gallery-img-side">
+                    <figcaption>Guide Briefing</figcaption>
+                </figure>
             </div>
         </section>
     </main>
